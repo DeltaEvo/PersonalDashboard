@@ -1,0 +1,43 @@
+port: 5000
+
+# define duraton between each dashboard rotation (ms)
+rotationDuration: 10000
+# define the interval used by Mozaïk Bus to call registered APIs
+apisPollInterval: 10000
+
+dashboards:
+- columns: 4
+  rows:    3
+  title:   Dashboard
+  widgets:
+  -
+    extension:    nlbw
+    widget:       TrafficMonitor
+    value:        'rx_bytes'
+    columns:      2
+    rows:         2
+    x:            0
+    y:            0
+  -
+    extension:    nlbw
+    widget:       RealTimeMonitor
+    value:        'rx_bytes'
+    columns:      2
+    rows:         2
+    x:            2
+    y:            0
+  -
+    extension:    statuspage-io
+    widget:       Incidents
+    pageId:       'srhpyqt94yxb'
+    columns:      1
+    rows:         1
+    x:            0
+    y:            2
+  -
+    extension:    github
+    widget:       Status
+    columns:      1
+    rows:         1
+    x:            1
+    y:            2
