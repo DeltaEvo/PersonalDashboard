@@ -29,7 +29,6 @@
     "nivo": "^0.15.0",
     "node-fetch": "^1.7.3",
     "node-ssh": "^5.0.0",
-    "pretty-bytes": "^4.0.2",
     "react": "^15.6.2",
     "react-dom": "^15.6.2"
   },

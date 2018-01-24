@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import SitemapIcon from 'react-icons/lib/fa/sitemap'
 import { ResponsivePie } from 'nivo'
-import prettyBytes from 'pretty-bytes';
+import prettyBytes from './pretty-bytes';
 import { withTheme } from 'styled-components'
 import {
     TrapApiError,
