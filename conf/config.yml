@@ -1,5 +1,5 @@
 port: 5000
-host: localhost
+host: '0.0.0.0'
 
 # define duraton between each dashboard rotation (ms)
 rotationDuration: 10000
